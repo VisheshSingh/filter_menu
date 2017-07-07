@@ -37,5 +37,18 @@
       <li class="collection-item"><a href="#">Cerny</a></li>
     </ul>
   </div>
+
+  <script type="text/javascript">
+    let filterInput = document.getElementById('filterInput');
+
+    //Get input element
+    filterInput.addEventListener('keyup', filterNames);
+
+    function filterNames() {
+      //get value entered by the user
+      let filterValue = document.getElementById('filterInput').value.toUpperCase();
+      console.log(filterValue);
+    }
+  </script>
 </body>
 </html>
